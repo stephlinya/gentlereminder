@@ -19,6 +19,17 @@ button:hover, button:focus {
   color: royalblue;
   border: none;
   font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#close-modal{
+  background: none;
+  position: absolute;
+  border: none;
+  padding: 0.5em;
+  color: royalblue;
+  top: 0;
+  right: 0.5em;
 }
 
 #modal { 
@@ -30,6 +41,11 @@ button:hover, button:focus {
   position: relative;
   top: 12%;
   border-radius: 3px;
+  text-align: left;
+}
+
+#right-align{
+  text-align: right;
 }
 
 #overlay { 
