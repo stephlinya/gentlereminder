@@ -1,15 +1,15 @@
 const quoteDisplay = document.getElementById("quote-display");
 
-const openModal = document.getElementById("open-letter");
-const closeModal = document.getElementById("close-letter");
+const openLetter = document.getElementById("open-letter");
+const closeLetter = document.getElementById("close-letter");
 const overlay = document.getElementById("overlay");
 
-openModal.addEventListener("click", function(){
+openLetter.addEventListener("click", function(){
     overlay.style.display = "block";
     displayQuotes();
 })
 
-closeModal.addEventListener("click", function(){
+closeLetter.addEventListener("click", function(){
     overlay.style.display = "none";
 })
 
@@ -20,7 +20,8 @@ function displayQuotes(){
         "It is okay to rest. It is okay to nap.", 
         "You are worthy.",
         "Done is better than perfect.",
-
+        "It is a maranthon and not a sprint.",
+        "The closest way to success is to try one more time.",
     ];
 
     let randomQuote = Math.floor(Math.random()*quotes.length);
