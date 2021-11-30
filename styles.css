@@ -1,6 +1,6 @@
 html, body {
   margin: 0;
-  padding: 50px;
+  padding: 15px;
   font-family: 'Gochi Hand', sans-serif;
   font-size: 21px;
   text-align: center;
@@ -66,10 +66,21 @@ button:hover, button:focus {
 }
 
 #open-letter:hover, #open-letter:focus {
-  animation: wiggle 300ms;
+  animation: wiggle 250ms;
+  animation-iteration-count: 5;
+  cursor: pointer;
 }
 
 /* typography */
+@font-face{
+  font-family: "earlygameboy";
+  src: url(./fonts/earlygameboy.ttf);
+}
+
+h1 { 
+  margin: 0 auto;
+  font-family: "earlygameboy", monospace;
+}
 
 h2 {
   font-size: 2.25rem;
@@ -119,4 +130,67 @@ h2 {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
+}
+
+#open-letter{
+  margin: 0 auto;
+  padding-bottom: 3.5rem;
+  animation: floating 2s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes floating{
+  0%{
+    transform: translateY(0px);
+  }
+
+  35%{
+    transform: translateY(10px);
+  }
+
+  50%{
+    transform: translateY(20px);
+  }
+
+  75%{
+    transform: translateY(10px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+#img-content{
+  position: relative;
+  display:inline;
+}
+
+#sparkles{
+  position: absolute;
+  right: -20px;
+  animation: blinking 0.5s ease running;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking{
+  0%{
+      opacity: 100%;
+  }
+
+  100%{
+     opacity: 65%;
+  }
+
+  0%{
+     opacity: 100%;
+  }
+}
+
+#open{
+  cursor: pointer;
+}
+
+#open:hover, #open:focus{
+  font-size: 1.2rem;
 }
