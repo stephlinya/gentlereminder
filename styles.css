@@ -1,16 +1,30 @@
+@font-face {
+  font-family: "dogica";
+  src: url(./fonts/dogica.ttf);
+}
+
 html, body {
   margin: 0;
   padding: 15px;
-  font-family: 'Gochi Hand', sans-serif;
-  font-size: 21px;
+  font-family: 'Dogica', 'Gochi Hand', sans-serif;
+  font-size: 16px;
   text-align: center;
-  color: #083572;
+  color: #55b3ae;
 }
+
+body {
+  background: rgb(88,254,227);
+background: linear-gradient(0deg, rgba(88,254,227,1) 0%, rgba(251,239,255,1) 50%, rgba(250,111,255,1) 100%);
+}
+  /* background: rgb(140,255,233);
+background: linear-gradient(0deg, rgba(140,255,233,1) 0%, rgba(247,158,255,1) 100%);
+} */
+
 /* button styles */
 button { 
-  background: royalblue;
+  background: #55b3ae;
   color: white;
-  padding: 1em 2em;
+  padding: 4em 2em;
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
@@ -20,7 +34,7 @@ button {
 
 button:hover, button:focus { 
   background: lightblue;
-  color: #083572;
+  color: #55b3ae;
   border: none;
   padding: 1.15em 2.15em;
   font-weight: 900;
@@ -77,9 +91,12 @@ button:hover, button:focus {
   src: url(./fonts/earlygameboy.ttf);
 }
 
-h1 { 
+#title { 
   margin: 0 auto;
   font-family: "earlygameboy", monospace;
+  background: -webkit-linear-gradient(#ebb3ff, #f48fb1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -87,26 +104,29 @@ h2 {
 }
 
 #quote-display {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 1.3px;
   line-height: 1.7;
+  padding: 1.2em;
 }
 
 #close-letter{
   background: none;
   position: absolute;
   border: none;
-  padding: 0.5em;
-  color: royalblue;
-  top: 0;
-  right: 0.5em;
+  padding: 1.5em;
+  color:#55b3ae;
+  top: 1em;
+  right: 2.25em;
 }
 
 #letter { 
-  background-image: url(../images/linedpaper.png);
+  background-image: url(./images/windows.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-color: white;
   padding: 2.5em;
-  min-height: 200px;
+  height: 300px;
   width: 65%;
   max-width: 700px;
   margin: 0 auto;
@@ -129,12 +149,11 @@ h2 {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 #open-letter{
   margin: 0 auto;
-  padding-bottom: 3.5rem;
+  margin-bottom: 3.5rem;
   animation: floating 2s infinite ease-in-out;
   cursor: pointer;
 }
@@ -166,9 +185,19 @@ h2 {
   display:inline;
 }
 
-#sparkles{
+#sparkles-l{
   position: absolute;
-  right: -20px;
+  top: -1em;
+  left: -14em;
+  animation: blinking 0.5s ease running;
+  animation-iteration-count: infinite;
+}
+
+
+#sparkles-r{
+  position: absolute;
+  top: 0em;
+  right: -12em;
   animation: blinking 0.5s ease running;
   animation-iteration-count: infinite;
 }
