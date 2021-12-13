@@ -33,7 +33,7 @@ closeLetter.addEventListener("click", function(){
     openLetter.style.display = "block";
     title.style.display = "block";
     btnText.style.display = "block";
-    sparklesRight.style.display = "block";
+    sparklesRight.style.display = "inline-block";
 })
 
 function displayQuotes(){
@@ -43,7 +43,7 @@ function displayQuotes(){
         "It is okay to rest. It is okay to nap.", 
         "You are worthy.",
         "Done is better than perfect.",
-        "It is a marathon and not a sprint.",
+        "Life is a marathon and not a sprint.",
         "I am enough just as I am.",
         "We are all growing at our own pace.",
         "I deserve to take my time.",

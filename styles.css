@@ -16,14 +16,12 @@ body {
   background: rgb(88,254,227);
 background: linear-gradient(0deg, rgba(88,254,227,1) 0%, rgba(251,239,255,1) 50%, rgba(250,111,255,1) 100%);
 }
-  /* background: rgb(140,255,233);
-background: linear-gradient(0deg, rgba(140,255,233,1) 0%, rgba(247,158,255,1) 100%);
-} */
 
 /* button styles */
 button { 
   background: #55b3ae;
   color: white;
+  border: 1px solid blue;
   padding: 4em 2em;
   font-size: 1rem;
   border-radius: 5px;
@@ -108,27 +106,32 @@ h2 {
   letter-spacing: 1.3px;
   line-height: 1.7;
   padding: 1.2em;
+  color: #f277a0;
 }
 
 #close-letter{
   background: none;
   position: absolute;
-  border: none;
-  padding: 1.5em;
+  border: 1px solid red;
+  font-family: 'Dogica', 'Gochi Hand', sans-serif;
+  font-size: 2rem;
+  padding: 0.5em;
   color:#55b3ae;
   top: 1em;
   right: 2.25em;
 }
 
 #letter { 
-  background-image: url(./images/windows.png);
+  background-image: url("./images/letter2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: white;
-  padding: 2.5em;
-  height: 300px;
-  width: 65%;
-  max-width: 700px;
+  image-rendering: pixelated;
+  padding: 3.5em;
+  height: 500px;
+  max-height: 70%;
+  width: 30%;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
   top: 12%;
