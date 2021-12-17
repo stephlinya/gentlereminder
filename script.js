@@ -96,7 +96,7 @@ function displayQuotes(){
         "Be kind to your past self. You did the best that you could.",
         "Idea: think of 3 things you are grateful for today.",
         "Not everyday needs to be ultra responsible and productive. You are allowed to have fun.",
-        "You deserve inner peace. Your worth should not be defined by a number.",
+        "I deserve inner peace. My worth should not be defined by a number.",
         "Ups, downs, stagnation, backwards, forwards... they're all a natural part of life. We see this all around us in the trees, flowers, and mushrooms.",
     ];
 
