@@ -5,7 +5,7 @@
 
 html, body {
   margin: 0;
-  padding: 15px;
+  padding: 16px;
   font-family: 'Dogica', 'Gochi Hand', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -101,10 +101,10 @@ h2 {
 }
 
 #quote-display {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 1.3px;
   line-height: 1.7;
-  padding: 1.25em 1.75em 0.85em 1.75em;
+  padding: 1.5em 1.2em 0.85em 1.7em;
   color: #f277a0;
 }
 
