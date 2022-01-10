@@ -98,6 +98,10 @@ function displayQuotes(){
         "Not everyday needs to be ultra responsible and productive. You are allowed to have fun.",
         "I deserve inner peace. My worth should not be defined by a number.",
         "Ups, downs, stagnation, backwards, forwards... they're all a natural part of life. We see this all around us in the trees, flowers, and mushrooms.",
+        "I am focused on my goals.",
+        "I am more than my productivity.",
+        "I am growing at my own pace and that is fast enough.",
+        "I am allowed to change my mind.",
     ];
 
     let randomQuote = Math.floor(Math.random()*quotes.length);

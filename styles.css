@@ -104,19 +104,14 @@ h2 {
   font-size: 1.3rem;
   letter-spacing: 1.3px;
   line-height: 1.7;
-  padding: 1.5em 1.2em 0.85em 1.7em;
+  padding: 1.5em;
   color: #f277a0;
 }
 
-@media (max-width: 1250px){
+@media (min-width: 850px){
   #quote-display {
-    font-size: 1.2rem;
-  }
-}
-
-@media(max-width: 1100px){
-  #quote-display {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 1.6em;
   }
 }
 
